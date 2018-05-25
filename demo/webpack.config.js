@@ -17,5 +17,11 @@ module.exports = {
       }
     }]
   },
-  plugins: [htmlPlugin]
+  plugins: [htmlPlugin],
+  resolve: {
+    alias: {
+      'button-for-react': path.resolve('../'),
+      'react': path.resolve('./node_modules/react')
+    }
+  }
 };
